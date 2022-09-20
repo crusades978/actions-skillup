@@ -2,8 +2,6 @@ version: '3.7'
 services:
   web:
     image: ubuntu:alpine
-    ports:
-      - "8080:80"
     volumes:
       - ./app:/home/lxuser/git/actions-skillup
     command: echo 'It just works.'
