@@ -4,4 +4,4 @@ services:
     image: ubuntu:alpine
     volumes:
       - ./app:/home/lxuser/git/actions-skillup
-    command: echo 'It just works.'
+        #command: echo 'It just works.'
