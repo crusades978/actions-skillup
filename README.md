@@ -1,4 +1,4 @@
-[![CI_CD](https://github.com/crusades978/actions-skillup/actions/workflows/shellcheck.yml/badge.svg?branch=main)](https://github.com/crusades978/actions-skillup/actions/workflows/shellcheck.yml) (shellcheck.png)
+[![CI_CD](https://github.com/crusades978/actions-skillup/actions/workflows/shellcheck.yml/badge.svg?branch=main)](https://github.com/crusades978/actions-skillup/actions/workflows/shellcheck.yml, shellcheck.png)
 # ![RealWorld Example App using Kotlin and Spring](example-logo.png)
 
 > ### Spring boot + MyBatis codebase containing real world examples (CRUD, auth, advanced patterns, etc) that adheres to the [RealWorld](https://github.com/gothinkster/realworld-example-apps) spec and API.
