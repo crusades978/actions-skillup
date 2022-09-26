@@ -10,3 +10,14 @@ break
 fi
 ((count++))
 done
+function F1()
+{
+echo 'I like github!'
+}
+
+F1
+
+function F2()
+{
+echo 'I like github! very very much!'
+}
