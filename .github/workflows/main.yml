@@ -4,9 +4,8 @@ name: CI_CD
 
 # Controls when the workflow will run
 on:
-  push: 
-    branches: 
-    - any
+  schedule:
+  - cron: "30 8 * * 1"
     
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -17,6 +16,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      
+      - name: Run shellcheak 
+        run: |
+          apt-get install xz-utils
+          tar xvf shellcheck-latest.linux.x86_64.tar.xz
+          ./shellcheck-latest/shellcheck --version
 
       - name: Run a one-line script
         run: echo Hello, world!
