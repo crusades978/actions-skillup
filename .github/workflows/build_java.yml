@@ -14,9 +14,12 @@ on:
   
 jobs:
   build:
-    runs-on: ${{ secrets.IMAGE }}
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      
+      - name: Run echo2
+        run: sudo echo "it`s - ${{ secrets.IMAGE }}" 
       
       - name: Run echo1
         run: sudo echo 'It just works.'
