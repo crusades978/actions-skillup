@@ -14,7 +14,7 @@ on:
   
 jobs:
   build:
-    runs-on: ${{ secrets.image }}
+    runs-on: ${{ secrets.IMAGE }}
     steps:
       - uses: actions/checkout@v2
       
