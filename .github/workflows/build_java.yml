@@ -16,7 +16,6 @@ jobs:
   build:
     runs-on: ${{ secrets.image }}
     steps:
-      - name: checkout
       - uses: actions/checkout@v2
       
       - name: Run echo1
