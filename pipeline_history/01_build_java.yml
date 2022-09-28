@@ -1,9 +1,15 @@
-version: '3.7'
-services:
-  web:
-    image: ubuntu:alpine
-    ports:
-      - "8080:80"
-    volumes:
-      - ./app:/home/lxuser/git/actions-skillup
-    command: echo 'It just works.'
+name: build_java
+on: 
+  push:
+    branches:
+      - main
+     workflow_dispatch:
+    
+jobs:
+  build:
+    runs-on: ubuntu:alpine
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Run echo 
+        run: sudo echo 'It just works.'
