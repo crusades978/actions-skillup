@@ -19,7 +19,7 @@ jobs:
       - uses: actions/checkout@v2
       
       - name: Run echo2
-        run: sudo echo "it`s - ${{ secrets.IMAGE }}" 
+        run: sudo echo "it is - ${{ secrets.IMAGE }}" 
       
       - name: Run echo1
         run: sudo echo 'It just works.'
